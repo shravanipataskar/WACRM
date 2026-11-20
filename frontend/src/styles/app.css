@@ -1,0 +1,200 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17212b;
+  background: #f7f9fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #f7f9fc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome-page {
+  overflow: hidden;
+}
+
+.navbar {
+  min-height: 76px;
+  border-bottom: 1px solid #e8edf3;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.navbar-brand {
+  color: #182b3c;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 10px;
+  color: #fff;
+  background: #2764e7;
+  letter-spacing: normal;
+}
+
+.navbar-text,
+.welcome-hero .lead,
+.welcome-card > p:last-of-type,
+.stack-card p,
+.footer-note {
+  color: #657587;
+}
+
+.welcome-hero {
+  padding-top: clamp(4rem, 10vw, 8rem);
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.eyebrow {
+  color: #41647c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #32b67a;
+  box-shadow: 0 0 0 4px #e0f6ed;
+}
+
+.welcome-hero h1 {
+  max-width: 760px;
+  color: #172b3b;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+}
+
+.welcome-hero h1 span {
+  color: #2764e7;
+}
+
+.welcome-hero .lead {
+  max-width: 560px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  --bs-btn-bg: #2764e7;
+  --bs-btn-border-color: #2764e7;
+  --bs-btn-hover-bg: #1d51c1;
+  --bs-btn-hover-border-color: #1d51c1;
+  --bs-btn-active-bg: #1d51c1;
+  --bs-btn-active-border-color: #1d51c1;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(39, 100, 231, 0.2);
+}
+
+.welcome-card {
+  position: relative;
+  min-height: 300px;
+  padding: 2rem;
+  overflow: hidden;
+  border: 1px solid #e7edf5;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #fff 20%, #edf4ff 100%);
+  box-shadow: 0 22px 60px rgba(35, 63, 91, 0.08);
+}
+
+.welcome-card > :not(.card-orbit) {
+  position: relative;
+  z-index: 1;
+}
+
+.card-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 2rem;
+  place-items: center;
+  border-radius: 15px;
+  color: #2764e7;
+  background: #e6efff;
+  font-size: 1.35rem;
+}
+
+.welcome-card h2 {
+  max-width: 280px;
+  color: #172b3b;
+}
+
+.card-orbit {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(39, 100, 231, 0.1);
+  border-radius: 50%;
+}
+
+.orbit-one {
+  right: -100px;
+  bottom: -125px;
+}
+
+.orbit-two {
+  right: -55px;
+  bottom: -165px;
+  width: 300px;
+  height: 300px;
+}
+
+.section-heading h2 {
+  color: #172b3b;
+  letter-spacing: -0.03em;
+}
+
+.stack-card {
+  padding: 1.4rem;
+  border: 1px solid #e8edf3;
+  border-radius: 15px;
+  background: #fff;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(35, 63, 91, 0.08);
+}
+
+.stack-icon {
+  color: #2764e7;
+  font-size: 1.35rem;
+}
+
+.stack-card h3 {
+  color: #25384a;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 575.98px) {
+  .welcome-hero {
+    padding-top: 3.5rem;
+  }
+
+  .welcome-hero h1 {
+    font-size: 2.7rem;
+  }
+}
